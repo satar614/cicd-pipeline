@@ -1,4 +1,4 @@
-FROM node:latest
+FROM node:16
 
 # Create app directory
 WORKDIR /usr/src/app
@@ -16,4 +16,4 @@ RUN npm install
 COPY . .
 
 EXPOSE 8080
-CMD [ "node", "server.j
+CMD [ "node", "server.js" ]
